@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111827;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  margin-top: 80px;
+  text-align: center;
+  font-family: "Abhaya Libre", serif;
+  font-size: 3.5rem;
+}
+
+.searchbar-div {
+  display: flex;
+  /* background-color: brown; */
+  width: 80%;
+  margin: 28px;
+}
+
+.search-input {
+  background-color: #eaeaea;
+  width: 80%;
+  padding: 9px;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+.search-btn {
+  width: 19%;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #46a500;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.search-btn:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-container {
+  background-color: #eaeaea;
+  width: 80%;
+  padding: 12px;
+  font-family: "Inter", sans-serif;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.word-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* background-color: brown; */
+}
+
+.word {
+  font-size: 2rem;
+  color: #46a500;
+}
+
+.speaker-div {
+  /* background-color: brown; */
+  margin-top: 8px;
+  background-color: #eaeaea;
+}
+
+.speaker-icon {
+  width: 20px;
+  cursor: pointer;
+}
+
+.speaker-div:active {
+  background-color: #78c83f;
+}
+
+.info-div {
+  margin-top: 20px;
+}
+
+.definition-div {
+  display: flex;
+  /* justify-content: center; */
+  gap: 10px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.definition-heading,
+.example-heading {
+  font-weight: 700;
+}
+
+.example-div {
+  display: flex;
+  /* justify-content: center; */
+  gap: 14px;
+  color: #333;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 713px) {
+  .searchbar-div {
+    max-width: 600px;
+  }
+  .search-input {
+    padding: 12px;
+  }
+  .card-container {
+    max-width: 600px;
+  }
+}
